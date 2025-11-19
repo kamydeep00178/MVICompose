@@ -1,34 +1,94 @@
 # Gradle files
 .gradle/
 build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle-cache/
+gradle-app.setting
 
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
+# Local configuration files (Android Studio/IntelliJ)
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/other.xml
+.idea/**/misc.xml
+.idea/**/assetWizardSettings.xml
 
-# Keystore files
+# Keystore files (🔒 DO NOT COMMIT real keys)
 *.jks
 *.keystore
+*.pem
+*.p12
+*.key
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Android Studio specific
+.cxx/
+local.properties
+captures/
+.externalNativeBuild/
+.idea/caches/
+.idea/modules.xml
 
-# Android Profiling
+# Log files
+*.log
+
+# Generated files
+*.iml
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.so
+*.obj
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# Jetpack Compose previews cache
+.compose-cache/
+.idea/compose-preview/
+
+# Kotlin specific
+*.kotlin_module
 *.hprof
+
+# Gradle properties (optional – if contains secrets)
+gradle.properties
+
+# NDK / CMake build
+.obj/
+.externalNativeBuild/
+.cxx/
+
+# Firebase / Google services
+google-services.json
+GoogleService-Info.plist
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Misc
+.idea/deploymentTargetDropDown.xml
+.vscode/
+*.swp
+*.tmp
+*.temp
