@@ -211,7 +211,8 @@ class PostsListViewModel @Inject constructor(
 ```
 
 ---
-**Follow me :**
-**Medium: https://kamaldeepkakkar.medium.com/**
-**LinkedIn: https://www.linkedin.com/in/kamal-kakkar-13ab2773/**
+##Follow me :
+
+**Medium:** https://kamaldeepkakkar.medium.com/
+**LinkedIn:** https://www.linkedin.com/in/kamal-kakkar-13ab2773/
 
