@@ -212,25 +212,4 @@ class PostsListViewModel @Inject constructor(
 
 ---
 
-## Where to extend
-- Add `UiEffect` channel or `SharedFlow` in ViewModel for navigation and one-off messages.
-- Add tests:
-  - Unit tests for UseCases (mock repo).
-  - Unit tests for ViewModel (fake usecases).
-  - Instrumented tests for UI.
-- Add paging for large lists (Paging 3) and map it to MVI (store `PagingData` in state or use `collectAsLazyPagingItems()` in Compose).
-- Add error / retry / empty states UI.
-
----
-
-## Final notes
-This repo is already organized in a production-friendly way. The MVI concepts map cleanly onto ViewModel + StateFlow + UseCases. For a strict MVI implementation you may:
-- Make all intents explicit via sealed classes.
-- Keep effects separate from state (SharedFlow/Channel).
-- Ensure reducer functions are pure (transform old state + result -> new state).
-
-If you want, I can:
-- Generate a `README.md` file inside the repo (saved to `/mnt/data/MVICompose-README.md`).
-- Create a `docs/ARCHITECTURE.md` with diagrams and sample sequence flows.
-- Produce a one-page cheat-sheet (PNG/PDF) summarizing the MVI flow.
 
