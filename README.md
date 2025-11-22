@@ -1,6 +1,6 @@
 
 # MVICompose — README
-
+## medium link : https://medium.com/p/f6f860d0497b
 ## Overview
 This repository demonstrates an MVI (Model–View–Intent) architecture implemented with Jetpack Compose and a Clean Architecture layering.  
 The code separates responsibilities into **data**, **domain**, and **ui** layers, uses **ViewModels** as the MVI state holders, and relies on **UseCases** for business logic. 
